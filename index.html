@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="Parcial 2.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+      <button class="Hotspot" slot="hotspot-1" data-position="3.420642510918471m 21.872111837728035m 3.107252597808838m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">HEAD</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="2.044212609204047m 11.203462617145156m 2.9278013706207275m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">BODY</div>
+      </button><button class="Hotspot" slot="hotspot-6" data-position="-0.6562298164024054m 16.61511993408203m 2.149030521341878m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">SHOULDER</div>
+      </button><button class="Hotspot" slot="hotspot-7" data-position="3.01383406648824m 18.170369908710747m 1m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">NECK</div>
+      </button><button class="Hotspot" slot="hotspot-8" data-position="-6.520156739886168m 15.434066033464786m 1m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">ARM</div>
+      </button><button class="Hotspot" slot="hotspot-9" data-position="-0.2572937928948491m 3.236229307973904m 1m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">LEG</div>
+      </button><button class="Hotspot" slot="hotspot-10" data-position="-0.44131294475844207m -0.5715429151092124m 3.241292715072632m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">FEET</div>
+      </button><button class="Hotspot" slot="hotspot-11" data-position="4.2093101242953885m 3.646792096670281m 0.9999999999999929m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">KNEE</div>
+      </button><button class="Hotspot" slot="hotspot-12" data-position="5.051748275756836m 8.825282243110614m 2.2233360100729342m" data-normal="1m 0m 0m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">HIPS</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/{{MODELVIEWER_VERSION}}/model-viewer.min.js"></script>
+  </body>
+</html>
